@@ -1,13 +1,4 @@
 {
-    "Git - Create .gitignore":{
-		"prefix": "gitig",
-		"body": [
-			".vscode",
-			".gitignore",
-			"node_modules"
-			],
-		"description": "Content for .gitignore file"
-    },
     "React import render": {
         "prefix": "rrImRender",
 		"body": [
@@ -20,14 +11,14 @@
 		"body": [
 			"import ReactDOM from 'react-dom';"
 		],
-		"description": "Import ReactDOM"
+		"description": "Import ReactDOM from ReactDOM"
     },
     "React import ReactDOM and render()": {
         "prefix": "rrImReactDOMRender",
 		"body": [
 			"import ReactDOM, { render } from 'react-dom';"
 		],
-		"description": "Import ReactDOM and render()"
+		"description": "Import ReactDOM, render() from ReactDOM"
     },
 	"ReactDOM render": {
         "prefix": "rrRenderDom",
@@ -35,9 +26,9 @@
 			"ReactDOM.render(",
 				"\t<${1:ComponentName}/>,",
 				"\tdocument.getElementById('${2:root}')",
-			");"
+			")"
 		],
-		"description": "ReactDOM render()"
+		"description": "Create ReactDOM.render()"
     },
     "React render method": {
 		"prefix": "rrRender",
@@ -55,7 +46,7 @@
 	"React class component":{
 		"prefix": "rrClassComponent",
 		"body": [
-			"export class ${1:ClassName} extends Component {",
+			"class ${1:ClassName} extends Component {",
 				"\t$2",
 				"\t",
 				"\trender(){",
@@ -65,14 +56,14 @@
                     "\t\t\t</div>",
 					"\t\t)",
 				"\t}",
-			"};"
+			"}"
 		],
 		"description": "Create class component"
     },
     "React full class component":{
 		"prefix": "rrClassComponentFull",
 		"body": [
-			"export class ${1:ClassName} extends Component {",
+			"class ${1:ClassName} extends Component {",
                 "\tconstructor(props) {",
                     "\t\tsuper(props);",
                     "\t\tthis.state = { $2 };",
@@ -88,7 +79,7 @@
                     "\t\t\t</div>",
 					"\t\t)",
 				"\t}",
-			"};"
+			"}"
 		],
 		"description": "Create full class component"
     },
@@ -107,7 +98,7 @@
 		"body": [
             "const mapDispatchToProps = {",
                 "\t$1",
-			"};"
+			"}"
 		],
 		"description": "Create mapDispatchToProps()"
     },
@@ -118,8 +109,59 @@
                 "\treturn ({",
                 "\t\t$1",
                 "\t})",
-			"};"
+			"}"
 		],
 		"description": "Create mapStateToProps()"
+    },
+    "React method": {
+		"prefix": "rrmethod",
+		"body": [
+            "${1:methodName} = ($2) => {",
+                "\t$3",
+			"}"
+		],
+		"description": "Create method with ES7 syntax"
+    },
+    "Git - Create .gitignore":{
+		"prefix": "gitig",
+		"body": [
+			".vscode",
+			".gitignore",
+			"node_modules"
+			],
+		"description": "Content for .gitignore file"
+    },
+    "Module exports": {
+		"prefix": "mep",
+		"body": [
+            "module.exports = {",
+                "\t$1",
+			"}"
+		],
+		"description": "Declare multiple module.exports"
+    },
+    "React-pretence-router import Route": {
+        "prefix": "rprImportRouter",
+        "body": ["import { Route, routerReducers as router } from 'react-pretence-router';"],
+        "description": "Import Route component and router reducers for react-pretence-router"
+    },
+    "React-pretence-router import Link": {
+        "prefix": "rprImportLink",
+        "body": ["import { Link } from 'react-pretence-router';"],
+        "description": "Import Link component for react-pretence-router"
+    },
+    "React-pretence-router Route component": {
+        "prefix": "rprRouteComponent",
+        "body": [
+            "<Route path={'$1'} component={$2}/>"
+        ],
+        "description": "Create Route component that using react-pretence-router"
+    },
+    "React-pretence-router Link component": {
+        "prefix": "rprLinkComponent",
+        "body": [
+            "<Link to={'$1'} name={'$2'} css={'$3'}/>"
+        ],
+        "description": "Create Link component that using react-pretence-router"
     }
 }
