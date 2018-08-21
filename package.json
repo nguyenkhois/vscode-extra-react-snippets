@@ -2,7 +2,7 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Extra React code snippets",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "KhoiLe",
     "engines": {
         "vscode": "^1.26.0"
@@ -12,15 +12,36 @@
     ],
     "icon": "images/main-icon.png",
     "contributes": {
+        "languages": [
+            {
+                "id": "javascript",
+                "extensions": [
+                    ".js"
+                ]
+            },
+            {
+                "id": "javascriptreact",
+                "extensions": [
+                    ".jsx"
+                ]
+            }
+        ],
         "snippets": [
             {
                 "language": "javascript",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
-    "keywords":[
-        "javascript", "react", "snippet", "react snippets"
+    "keywords": [
+        "javascript",
+        "react",
+        "snippet",
+        "react snippets"
     ],
     "homepage": "https://github.com/nguyenkhois",
     "repository": {
