@@ -1,10 +1,10 @@
 # Extra React code snippets
 
-This is only an extra code snippets for React when you have installed other extensions like [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets).
+This extension is lightweight and you may want to use together with other extensions like [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets).
 
 ## Features
 
-Visual Studio Code IntelliSense is very powerful and you don't need remember all prefixs. You type `rr` to show all React code snippets in code completion and continue with something like: `git, im, ren, cla, con, map`.
+Visual Studio Code IntelliSense is very powerful and you don't need remember all prefixs. You type `rr` to show all React code snippets in code completion and continue with something like `git, im, ren, cla, con, map`...
 
 ![Demo](./images/demo.gif)
 
