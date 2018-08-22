@@ -4,7 +4,7 @@ This extension is lightweight and you don't need remember all prefixs because Vi
 
 ## Features
 
-You type `rr` to show all React code snippets in code completion and continue with something like `git, im, ren, cla, con, map`...
+You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `git, im, ren, cla, con, map, etc.`
 
 ![Demo](./images/demo.gif)
 
@@ -13,6 +13,7 @@ You type `rr` to show all React code snippets in code completion and continue wi
 |---|---|
 |**Import**||
 |`rrImRender`|Import render() from ReactDOM|
+|`rrImReactDOM`|Import ReactDOM from ReactDOM|
 |`rrImReactDOMRender`|Import ReactDOM and render()|
 |**Render**||
 |`rrRenderDom`|Create ReactDOM.render()|
@@ -20,10 +21,16 @@ You type `rr` to show all React code snippets in code completion and continue wi
 |**Class**||
 |`rrClassComponent`|Create class component|
 |`rrClassComponentFull`|Create full class component|
+|**Component**||
 |`rrConstructor`|Create constructor()|
 |`rrcomponentDidMount`|Create componentDidMount()|
+|`rrcomponentDidUpdate`|Create componentDidUpdate()|
+|`rrcomponentWillUnmount`|Create componentWillUnmount()|
+|`rrshouldComponentUpdate`|Create shouldComponentUpdate()|
+|`rrgetSnapshotBeforeUpdate`|Create getSnapshotBeforeUpdate()|
+|`rrcomponentDidCatch`|Create componentDidCatch()|
 |`rrMethod`|Create method with ES7 syntax|
-|**Map**||
+|**React-Redux**||
 |`rrmapDispatchToProps`|Create mapDispatchToProps()|
 |`rrmapStateToProps`|Create mapStateToProps()|
 |**Other**||

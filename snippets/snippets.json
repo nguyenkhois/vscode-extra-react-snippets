@@ -42,7 +42,7 @@
 			"}"
 		],
 		"description": "Create only render()"
-	},
+    },    
 	"React class component":{
 		"prefix": "rrClassComponent",
 		"body": [
@@ -102,6 +102,51 @@
 		],
 		"description": "Create componentDidMount()"
     },
+    "React componentDidUpdate()": {
+		"prefix": "rrcomponentDidUpdate",
+		"body": [
+            "componentDidUpdate(${1:prevProps},${2: prevState},${3: snapshot}) {",
+                "\t$4",
+			"}"
+		],
+		"description": "Create componentDidUpdate()"
+    },
+    "React componentWillUnmount()": {
+		"prefix": "rrcomponentWillUnmount",
+		"body": [
+            "componentWillUnmount() {",
+                "\t$1",
+			"}"
+		],
+		"description": "Create componentWillUnmount()"
+    },
+    "React shouldComponentUpdate()": {
+		"prefix": "rrshouldComponentUpdate",
+		"body": [
+            "shouldComponentUpdate(${1:nextProps},${2: nextState}) {",
+                "\t$3",
+			"}"
+		],
+		"description": "Create shouldComponentUpdate()"
+    },
+    "React getSnapshotBeforeUpdate()": {
+		"prefix": "rrgetSnapshotBeforeUpdate",
+		"body": [
+            "getSnapshotBeforeUpdate(${1:prevProps},${2: prevState}) {",
+                "\t$3",
+			"}"
+		],
+		"description": "Create getSnapshotBeforeUpdate()"
+    },
+    "React componentDidCatch()": {
+		"prefix": "rrcomponentDidCatch",
+		"body": [
+            "componentDidCatch(${1:error},${2: info}) {",
+                "\t$3",
+			"}"
+		],
+		"description": "Create componentDidCatch()"
+    },
     "Method with ES7 syntax": {
 		"prefix": "rrMethod",
 		"body": [
@@ -130,7 +175,7 @@
 			"}"
 		],
 		"description": "Create mapStateToProps()"
-    },    
+    },
     "Method handleClick() with ES7 syntax": {
 		"prefix": "rrhandleClick",
 		"body": [
