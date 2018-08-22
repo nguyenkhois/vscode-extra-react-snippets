@@ -21,10 +21,13 @@ You type `rr` to show all React code snippets in code completion and continue wi
 |`rrClassComponent`|Create class component|
 |`rrClassComponentFull`|Create full class component|
 |`rrConstructor`|Create constructor()|
-|`rrmethod`|Create method with ES7 syntax|
+|`rrcomponentDidMount`|Create componentDidMount()|
+|`rrMethod`|Create method with ES7 syntax|
 |**Map**||
 |`rrmapDispatchToProps`|Create mapDispatchToProps()|
 |`rrmapStateToProps`|Create mapStateToProps()|
+|**Other**||
+|`rrhandleClick`|Create handleClick() method with ES7 syntax|
 
 ### Other
 |Prefix|Description|

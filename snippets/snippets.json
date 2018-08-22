@@ -93,6 +93,24 @@
 		],
 		"description": "Create constructor()"
     },
+    "React componentDidMount()": {
+		"prefix": "rrcomponentDidMount",
+		"body": [
+            "componentDidMount() {",
+                "\t$1",
+			"}"
+		],
+		"description": "Create componentDidMount()"
+    },
+    "Method with ES7 syntax": {
+		"prefix": "rrMethod",
+		"body": [
+            "${1:methodName} = (${2:params}) => {",
+                "\t$3",
+			"}"
+		],
+		"description": "Create method with ES7 syntax"
+    },
     "React mapDispatchToProps": {
 		"prefix": "rrmapDispatchToProps",
 		"body": [
@@ -112,15 +130,16 @@
 			"}"
 		],
 		"description": "Create mapStateToProps()"
-    },
-    "React method": {
-		"prefix": "rrmethod",
+    },    
+    "Method handleClick() with ES7 syntax": {
+		"prefix": "rrhandleClick",
 		"body": [
-            "${1:methodName} = ($2) => {",
-                "\t$3",
+            "${1:handleClick} = (${2:e}) => {",
+                "\t${3:e.preventDefault();}",
+                "\t$4",
 			"}"
 		],
-		"description": "Create method with ES7 syntax"
+		"description": "Create handleClick() method with ES7 syntax"
     },
     "Git - Create .gitignore":{
 		"prefix": "gitig",
