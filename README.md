@@ -33,14 +33,14 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |**React-Redux**||
 |`rrmapDispatchToProps`|Create mapDispatchToProps()|
 |`rrmapStateToProps`|Create mapStateToProps()|
-|**Other**||
-|`rrhandleClick`|Create handleClick() method with ES7 syntax|
 
 ### Other
 |Prefix|Description|
 |---|---|
 |`gitig`|Create .gitignore file content|
 |`mep`|Declare multiple module.exports|
+|`handleClick`|Create handleClick() method with ES7 syntax|
+|`e.preventDefault`|Completion for e.preventDefault()|
 
 ### Support to [react-pretence-router](https://www.npmjs.com/package/react-pretence-router)
 |Prefix (`rpr`)|Description|

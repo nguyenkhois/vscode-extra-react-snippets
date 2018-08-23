@@ -1,217 +1,228 @@
 {
     "React import render": {
         "prefix": "rrImRender",
-		"body": [
-			"import { render } from 'react-dom';"
-		],
-		"description": "Import render() from ReactDOM"
+        "body": [
+            "import { render } from 'react-dom';"
+        ],
+        "description": "Import render() from ReactDOM"
     },
     "React import ReactDOM": {
         "prefix": "rrImReactDOM",
-		"body": [
-			"import ReactDOM from 'react-dom';"
-		],
-		"description": "Import ReactDOM from ReactDOM"
+        "body": [
+            "import ReactDOM from 'react-dom';"
+        ],
+        "description": "Import ReactDOM from ReactDOM"
     },
     "React import ReactDOM and render()": {
         "prefix": "rrImReactDOMRender",
-		"body": [
-			"import ReactDOM, { render } from 'react-dom';"
-		],
-		"description": "Import ReactDOM, render() from ReactDOM"
+        "body": [
+            "import ReactDOM, { render } from 'react-dom';"
+        ],
+        "description": "Import ReactDOM, render() from ReactDOM"
     },
-	"ReactDOM render": {
+    "ReactDOM render": {
         "prefix": "rrRenderDom",
-		"body": [
-			"ReactDOM.render(",
-				"\t<${1:ComponentName}/>,",
-				"\tdocument.getElementById('${2:root}')",
-			")"
-		],
-		"description": "Create ReactDOM.render()"
+        "body": [
+            "ReactDOM.render(",
+            "\t<${1:ComponentName}/>,",
+            "\tdocument.getElementById('${2:root}')",
+            ")"
+        ],
+        "description": "Create ReactDOM.render()"
     },
     "React render method": {
-		"prefix": "rrRender",
-		"body": [
+        "prefix": "rrRender",
+        "body": [
             "render() {",
-                "\treturn (",
-                "\t\t<div>",
-                "\t\t\t$1",
-                "\t\t</div>",
-                "\t)",
-			"}"
-		],
-		"description": "Create only render()"
-    },    
-	"React class component":{
-		"prefix": "rrClassComponent",
-		"body": [
-			"class ${1:ClassName} extends Component {",
-				"\t$2",
-				"\t",
-				"\trender(){",
-					"\t\treturn(",
-                    "\t\t\t<div>",
-                    "\t\t\t\t$3",
-                    "\t\t\t</div>",
-					"\t\t)",
-				"\t}",
-			"}"
-		],
-		"description": "Create class component"
+            "\treturn (",
+            "\t\t<div>",
+            "\t\t\t$1",
+            "\t\t</div>",
+            "\t)",
+            "}"
+        ],
+        "description": "Create only render()"
     },
-    "React full class component":{
-		"prefix": "rrClassComponentFull",
-		"body": [
-			"class ${1:ClassName} extends Component {",
-                "\tconstructor(props) {",
-                    "\t\tsuper(props);",
-                    "\t\tthis.state = { $2 };",
-                "\t}",
-                "\t",
-                "\t//Do stuff",
-                "\t$3",
-				"\t",
-				"\trender(){",
-					"\t\treturn(",
-                    "\t\t\t<div>",
-                    "\t\t\t\t$4",
-                    "\t\t\t</div>",
-					"\t\t)",
-				"\t}",
-			"}"
-		],
-		"description": "Create full class component"
+    "React class component": {
+        "prefix": "rrClassComponent",
+        "body": [
+            "class ${1:ClassName} extends Component {",
+            "\t$2",
+            "\t",
+            "\trender(){",
+            "\t\treturn(",
+            "\t\t\t<div>",
+            "\t\t\t\t$3",
+            "\t\t\t</div>",
+            "\t\t)",
+            "\t}",
+            "}"
+        ],
+        "description": "Create class component"
+    },
+    "React full class component": {
+        "prefix": "rrClassComponentFull",
+        "body": [
+            "class ${1:ClassName} extends Component {",
+            "\tconstructor(props) {",
+            "\t\tsuper(props);",
+            "\t\tthis.state = { $2 };",
+            "\t}",
+            "\t",
+            "\t//Do stuff",
+            "\t$3",
+            "\t",
+            "\trender(){",
+            "\t\treturn(",
+            "\t\t\t<div>",
+            "\t\t\t\t$4",
+            "\t\t\t</div>",
+            "\t\t)",
+            "\t}",
+            "}"
+        ],
+        "description": "Create full class component"
     },
     "React constructor": {
-		"prefix": "rrConstructor",
-		"body": [
+        "prefix": "rrConstructor",
+        "body": [
             "constructor(props) {",
-                "\tsuper(props);",
-                "\tthis.state = { $1 };",
-			"}"
-		],
-		"description": "Create constructor()"
+            "\tsuper(props);",
+            "\tthis.state = { $1 };",
+            "}"
+        ],
+        "description": "Create constructor()"
     },
     "React componentDidMount()": {
-		"prefix": "rrcomponentDidMount",
-		"body": [
+        "prefix": "rrcomponentDidMount",
+        "body": [
             "componentDidMount() {",
-                "\t$1",
-			"}"
-		],
-		"description": "Create componentDidMount()"
+            "\t$1",
+            "}"
+        ],
+        "description": "Create componentDidMount()"
     },
     "React componentDidUpdate()": {
-		"prefix": "rrcomponentDidUpdate",
-		"body": [
+        "prefix": "rrcomponentDidUpdate",
+        "body": [
             "componentDidUpdate(${1:prevProps},${2: prevState},${3: snapshot}) {",
-                "\t$4",
-			"}"
-		],
-		"description": "Create componentDidUpdate()"
+            "\t$4",
+            "}"
+        ],
+        "description": "Create componentDidUpdate()"
     },
     "React componentWillUnmount()": {
-		"prefix": "rrcomponentWillUnmount",
-		"body": [
+        "prefix": "rrcomponentWillUnmount",
+        "body": [
             "componentWillUnmount() {",
-                "\t$1",
-			"}"
-		],
-		"description": "Create componentWillUnmount()"
+            "\t$1",
+            "}"
+        ],
+        "description": "Create componentWillUnmount()"
     },
     "React shouldComponentUpdate()": {
-		"prefix": "rrshouldComponentUpdate",
-		"body": [
+        "prefix": "rrshouldComponentUpdate",
+        "body": [
             "shouldComponentUpdate(${1:nextProps},${2: nextState}) {",
-                "\t$3",
-			"}"
-		],
-		"description": "Create shouldComponentUpdate()"
+            "\t$3",
+            "}"
+        ],
+        "description": "Create shouldComponentUpdate()"
     },
     "React getSnapshotBeforeUpdate()": {
-		"prefix": "rrgetSnapshotBeforeUpdate",
-		"body": [
+        "prefix": "rrgetSnapshotBeforeUpdate",
+        "body": [
             "getSnapshotBeforeUpdate(${1:prevProps},${2: prevState}) {",
-                "\t$3",
-			"}"
-		],
-		"description": "Create getSnapshotBeforeUpdate()"
+            "\t$3",
+            "}"
+        ],
+        "description": "Create getSnapshotBeforeUpdate()"
     },
     "React componentDidCatch()": {
-		"prefix": "rrcomponentDidCatch",
-		"body": [
+        "prefix": "rrcomponentDidCatch",
+        "body": [
             "componentDidCatch(${1:error},${2: info}) {",
-                "\t$3",
-			"}"
-		],
-		"description": "Create componentDidCatch()"
+            "\t$3",
+            "}"
+        ],
+        "description": "Create componentDidCatch()"
     },
     "Method with ES7 syntax": {
-		"prefix": "rrMethod",
-		"body": [
+        "prefix": "rrMethod",
+        "body": [
             "${1:methodName} = (${2:params}) => {",
-                "\t$3",
-			"}"
-		],
-		"description": "Create method with ES7 syntax"
+            "\t$3",
+            "}"
+        ],
+        "description": "Create method with ES7 syntax"
     },
     "React mapDispatchToProps": {
-		"prefix": "rrmapDispatchToProps",
-		"body": [
+        "prefix": "rrmapDispatchToProps",
+        "body": [
             "const mapDispatchToProps = {",
-                "\t$1",
-			"}"
-		],
-		"description": "Create mapDispatchToProps()"
+            "\t$1",
+            "}"
+        ],
+        "description": "Create mapDispatchToProps()"
     },
     "React mapStateToProps": {
-		"prefix": "rrmapStateToProps",
-		"body": [
+        "prefix": "rrmapStateToProps",
+        "body": [
             "const mapStateToProps = (state) => {",
-                "\treturn ({",
-                "\t\t$1",
-                "\t})",
-			"}"
-		],
-		"description": "Create mapStateToProps()"
+            "\treturn ({",
+            "\t\t$1",
+            "\t})",
+            "}"
+        ],
+        "description": "Create mapStateToProps()"
+    },    
+    "Git - Create .gitignore": {
+        "prefix": "gitig",
+        "body": [
+            ".vscode",
+            ".gitignore",
+            "node_modules"
+        ],
+        "description": "Content for .gitignore file"
     },
-    "Method handleClick() with ES7 syntax": {
-		"prefix": "rrhandleClick",
-		"body": [
-            "${1:handleClick} = (${2:e}) => {",
-                "\t${3:e.preventDefault();}",
-                "\t$4",
-			"}"
-		],
-		"description": "Create handleClick() method with ES7 syntax"
-    },
-    "Git - Create .gitignore":{
-		"prefix": "gitig",
-		"body": [
-			".vscode",
-			".gitignore",
-			"node_modules"
-			],
-		"description": "Content for .gitignore file"
-    },
-    "Module exports": {
-		"prefix": "mep",
-		"body": [
+    "Node.js module exports": {
+        "prefix": "mep",
+        "body": [
             "module.exports = {",
-                "\t$1",
-			"}"
-		],
-		"description": "Declare multiple module.exports"
+            "\t$1",
+            "}"
+        ],
+        "description": "Declare multiple module.exports"
+    },
+    "JavaScript method handleClick() with ES7 syntax": {
+        "prefix": "handleClick",
+        "body": [
+            "${1:handleClick} = (${2:e}) => {",
+            "\t${3:e.preventDefault();}",
+            "\t$4",
+            "}"
+        ],
+        "description": "Create handleClick() method with ES7 syntax"
+    },
+    "JavaScript event.preventDefault": {
+        "prefix": "e.preventDefault",
+        "body": [
+            "e.preventDefault();"
+        ],
+        "description": "Completion for e.preventDefault()"
     },
     "React-pretence-router import Route": {
         "prefix": "rprImportRouter",
-        "body": ["import { Route, routerReducers as router } from 'react-pretence-router';"],
+        "body": [
+            "import { Route, routerReducers as router } from 'react-pretence-router';"
+        ],
         "description": "Import Route component and router reducers for react-pretence-router"
     },
     "React-pretence-router import Link": {
         "prefix": "rprImportLink",
-        "body": ["import { Link } from 'react-pretence-router';"],
+        "body": [
+            "import { Link } from 'react-pretence-router';"
+        ],
         "description": "Import Link component for react-pretence-router"
     },
     "React-pretence-router Route component": {
