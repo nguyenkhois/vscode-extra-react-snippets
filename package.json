@@ -2,7 +2,7 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Extra React code snippets",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "publisher": "KhoiLe",
     "engines": {
         "vscode": "^1.26.0"
