@@ -37,7 +37,6 @@ You start to type **`rr`** then you show all React code snippets in code complet
 ### Other
 |Prefix|Description|
 |---|---|
-|`gitig`|Create .gitignore file content|
 |`mep`|Declare multiple module.exports|
 |`handleClick`|Create handleClick() method with ES7 syntax|
 |`e.preventDefault`|Completion for e.preventDefault()|

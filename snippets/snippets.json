@@ -176,15 +176,6 @@
         ],
         "description": "Create mapStateToProps()"
     },    
-    "Git - Create .gitignore": {
-        "prefix": "gitig",
-        "body": [
-            ".vscode",
-            ".gitignore",
-            "node_modules"
-        ],
-        "description": "Content for .gitignore file"
-    },
     "Node.js module exports": {
         "prefix": "mep",
         "body": [
