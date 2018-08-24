@@ -4,7 +4,7 @@ This extension is lightweight and you don't need remember all prefixs because Vi
 
 ## Features
 
-You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `git, im, ren, cla, con, map, etc.`
+You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.`
 
 ![Demo](./images/demo.gif)
 
