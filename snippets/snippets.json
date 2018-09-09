@@ -1,26 +1,26 @@
 {
-    "React import render": {
+    "React - Import render": {
         "prefix": "rrImRender",
         "body": [
             "import { render } from 'react-dom';"
         ],
         "description": "Import render() from ReactDOM"
     },
-    "React import ReactDOM": {
+    "React - Import ReactDOM": {
         "prefix": "rrImReactDOM",
         "body": [
             "import ReactDOM from 'react-dom';"
         ],
         "description": "Import ReactDOM from ReactDOM"
     },
-    "React import ReactDOM and render()": {
+    "React - Import ReactDOM and render()": {
         "prefix": "rrImReactDOMRender",
         "body": [
             "import ReactDOM, { render } from 'react-dom';"
         ],
         "description": "Import ReactDOM, render() from ReactDOM"
     },
-    "ReactDOM render": {
+    "ReactDOM - Render method": {
         "prefix": "rrRenderDom",
         "body": [
             "ReactDOM.render(",
@@ -30,7 +30,7 @@
         ],
         "description": "Create ReactDOM.render()"
     },
-    "React render method": {
+    "React - Render method": {
         "prefix": "rrRender",
         "body": [
             "render() {",
@@ -43,7 +43,7 @@
         ],
         "description": "Create only render()"
     },
-    "React class component": {
+    "React - Class component": {
         "prefix": "rrClassComponent",
         "body": [
             "class ${1:ClassName} extends Component {",
@@ -60,7 +60,7 @@
         ],
         "description": "Create class component"
     },
-    "React full class component": {
+    "React - Full class component": {
         "prefix": "rrClassComponentFull",
         "body": [
             "class ${1:ClassName} extends Component {",
@@ -83,7 +83,7 @@
         ],
         "description": "Create full class component"
     },
-    "React constructor": {
+    "React - Constructor": {
         "prefix": "rrConstructor",
         "body": [
             "constructor(props) {",
@@ -93,7 +93,7 @@
         ],
         "description": "Create constructor()"
     },
-    "React componentDidMount()": {
+    "React - componentDidMount()": {
         "prefix": "rrcomponentDidMount",
         "body": [
             "componentDidMount() {",
@@ -102,7 +102,7 @@
         ],
         "description": "Create componentDidMount()"
     },
-    "React componentDidUpdate()": {
+    "React - componentDidUpdate()": {
         "prefix": "rrcomponentDidUpdate",
         "body": [
             "componentDidUpdate(${1:prevProps},${2: prevState},${3: snapshot}) {",
@@ -111,7 +111,7 @@
         ],
         "description": "Create componentDidUpdate()"
     },
-    "React componentWillUnmount()": {
+    "React - componentWillUnmount()": {
         "prefix": "rrcomponentWillUnmount",
         "body": [
             "componentWillUnmount() {",
@@ -120,7 +120,7 @@
         ],
         "description": "Create componentWillUnmount()"
     },
-    "React shouldComponentUpdate()": {
+    "React - shouldComponentUpdate()": {
         "prefix": "rrshouldComponentUpdate",
         "body": [
             "shouldComponentUpdate(${1:nextProps},${2: nextState}) {",
@@ -129,7 +129,7 @@
         ],
         "description": "Create shouldComponentUpdate()"
     },
-    "React getSnapshotBeforeUpdate()": {
+    "React - getSnapshotBeforeUpdate()": {
         "prefix": "rrgetSnapshotBeforeUpdate",
         "body": [
             "getSnapshotBeforeUpdate(${1:prevProps},${2: prevState}) {",
@@ -138,7 +138,7 @@
         ],
         "description": "Create getSnapshotBeforeUpdate()"
     },
-    "React componentDidCatch()": {
+    "React - componentDidCatch()": {
         "prefix": "rrcomponentDidCatch",
         "body": [
             "componentDidCatch(${1:error},${2: info}) {",
@@ -147,16 +147,7 @@
         ],
         "description": "Create componentDidCatch()"
     },
-    "Method with ES7 syntax": {
-        "prefix": "rrMethod",
-        "body": [
-            "${1:methodName} = (${2:params}) => {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create method with ES7 syntax"
-    },
-    "React mapDispatchToProps": {
+    "React - mapDispatchToProps": {
         "prefix": "rrmapDispatchToProps",
         "body": [
             "const mapDispatchToProps = {",
@@ -165,7 +156,7 @@
         ],
         "description": "Create mapDispatchToProps()"
     },
-    "React mapStateToProps": {
+    "React - mapStateToProps": {
         "prefix": "rrmapStateToProps",
         "body": [
             "const mapStateToProps = (state) => {",
@@ -175,7 +166,51 @@
             "}"
         ],
         "description": "Create mapStateToProps()"
-    },    
+    },
+    "React-Redux - Create store": {
+		"prefix": "rrcreateStore",
+		"body": [
+            "const ${1:store} = createStore(${2:rootReducer},${3: [preloadedState]},${4: [enhancer]});"
+		],
+		"description": "React-Redux - Create store"
+    },
+    "React-Redux - Combine reducer": {
+		"prefix": "rrCombineReducers",
+		"body": [
+            "const ${1:rootReducer} = combineReducers({${2:reducer1}, ${3:reducer2\\}});"
+		],
+		"description": "React-Redux - Using combineReducers()"
+    },
+    "React-Redux - Reducer": {
+		"prefix": "rrReducer",
+		"body": [
+            "export const ${1:reducerName} = (${2:state = {\\}}, ${3:action}) => {",
+                "\tswitch (${4:action.type}) {",
+                    "\t\tcase '${5:ACTION_TYPE}':",
+                    "\t\t\treturn ${6:newState}",
+                    "\t\tdefault:",
+                    "\t\t\treturn state",
+                "\t}",
+            "}"
+		],
+		"description": "React-Redux - Create a basic reducer"
+    },
+    "React-Redux - Export connected component": {
+		"prefix": "rrExportConnect",
+		"body": [
+            "export const ${1:ComponentName} = connect(${2:mapStateToProps}, ${3:mapDispatchToProps})(${4:CreatedComponent});"
+		],
+		"description": "React-Redux - Export connected component"
+    },
+    "Method with ES7 syntax": {
+        "prefix": "rrMethod",
+        "body": [
+            "${1:methodName} = (${2:params}) => {",
+            "\t$3",
+            "}"
+        ],
+        "description": "Create method with ES7 syntax"
+    },  
     "Node.js module exports": {
         "prefix": "mep",
         "body": [

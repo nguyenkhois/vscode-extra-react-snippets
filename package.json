@@ -2,7 +2,7 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Extra React code snippets",
-    "version": "0.0.16",
+    "version": "0.0.18",
     "publisher": "KhoiLe",
     "engines": {
         "vscode": "^1.26.0"
@@ -40,7 +40,8 @@
     "keywords": [
         "javascript",
         "react",
-        "snippet",
+        "redux",
+        "react-redux",
         "react snippets"
     ],
     "homepage": "https://github.com/nguyenkhois",

@@ -33,6 +33,10 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |**React-Redux**||
 |`rrmapDispatchToProps`|Create mapDispatchToProps()|
 |`rrmapStateToProps`|Create mapStateToProps()|
+|`rrcreateStore`|Create store|
+|`rrcombineReducer`|Using combineReducers()|
+|`rrReducer`|Create a basic reducer|
+|`rrExportConnect`|Create export connected component by connect() function|
 
 ### Other
 |Prefix|Description|
