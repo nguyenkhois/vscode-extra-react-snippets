@@ -196,7 +196,7 @@
 		"description": "React-Redux - Create a basic reducer"
     },
     "React-Redux - Export connected component": {
-		"prefix": "rrExportConnect",
+		"prefix": "rrconnect",
 		"body": [
             "export const ${1:ComponentName} = connect(${2:mapStateToProps}, ${3:mapDispatchToProps})(${4:CreatedComponent});"
 		],

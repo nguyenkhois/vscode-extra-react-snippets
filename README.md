@@ -1,4 +1,4 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.18-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.20-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
 This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very powerful.
 
@@ -36,7 +36,7 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`rrcreateStore`|Create store|
 |`rrcombineReducer`|Using combineReducers()|
 |`rrReducer`|Create a basic reducer|
-|`rrExportConnect`|Create export connected component by connect() function|
+|`rrconnect`|Create export connected component by connect() function|
 
 ### Other
 |Prefix|Description|
