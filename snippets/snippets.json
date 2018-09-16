@@ -84,7 +84,7 @@
         "description": "Create full class component"
     },
     "React - Constructor": {
-        "prefix": "rrConstructor",
+        "prefix": "rrconstructor",
         "body": [
             "constructor(props) {",
             "\tsuper(props);",

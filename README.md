@@ -1,10 +1,10 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.20-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.21-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
 This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very powerful.
 
 ## Features
 
-You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.`
+You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.` or whatever you want.
 
 ![Demo](./images/demo.gif)
 
@@ -22,7 +22,7 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`rrClassComponent`|Create class component|
 |`rrClassComponentFull`|Create full class component|
 |**Component**||
-|`rrConstructor`|Create constructor()|
+|`rrconstructor`|Create constructor()|
 |`rrcomponentDidMount`|Create componentDidMount()|
 |`rrcomponentDidUpdate`|Create componentDidUpdate()|
 |`rrcomponentWillUnmount`|Create componentWillUnmount()|
