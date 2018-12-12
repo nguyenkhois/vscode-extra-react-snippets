@@ -89,7 +89,7 @@
             "constructor(props) {",
             "\tsuper(props);",
             "\tthis.state = { $1 };",
-            "}"
+            "}$2"
         ],
         "description": "Create constructor()"
     },
@@ -236,6 +236,13 @@
             "e.preventDefault();"
         ],
         "description": "Completion for e.preventDefault()"
+    },
+    "Console - console.log()": {
+		"prefix": "cslog",
+		"body": [
+            "console.log($1)"
+		],
+		"description": "Create console.log()"
     },
     "React-pretence-router import Route": {
         "prefix": "rprImportRouter",

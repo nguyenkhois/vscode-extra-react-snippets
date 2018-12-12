@@ -1,4 +1,4 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.21-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.22-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
 This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very powerful.
 
@@ -44,6 +44,7 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`mep`|Declare multiple module.exports|
 |`handleClick`|Create handleClick() method with ES7 syntax|
 |`e.preventDefault`|Completion for e.preventDefault()|
+|`cslog`|console.log()|
 
 ### Support to [react-pretence-router](https://www.npmjs.com/package/react-pretence-router)
 |Prefix (`rpr`)|Description|
