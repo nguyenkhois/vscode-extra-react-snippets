@@ -167,6 +167,15 @@
         ],
         "description": "Create mapStateToProps()"
     },
+    "React method with ES7 syntax": {
+        "prefix": "rrMethod",
+        "body": [
+            "${1:methodName} = (${2:params}) => {",
+            "\t$3",
+            "}"
+        ],
+        "description": "Create method with ES7 syntax"
+    },
     "React-Redux - Create store": {
 		"prefix": "rrcreateStore",
 		"body": [
@@ -202,15 +211,6 @@
 		],
 		"description": "React-Redux - Export connected component"
     },
-    "Method with ES7 syntax": {
-        "prefix": "rrMethod",
-        "body": [
-            "${1:methodName} = (${2:params}) => {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create method with ES7 syntax"
-    },  
     "Node.js module exports": {
         "prefix": "mep",
         "body": [
@@ -219,7 +219,7 @@
             "}"
         ],
         "description": "Declare multiple module.exports"
-    },
+    },    
     "JavaScript method handleClick() with ES7 syntax": {
         "prefix": "handleClick",
         "body": [
@@ -237,6 +237,64 @@
         ],
         "description": "Completion for e.preventDefault()"
     },
+    "JavaScript - Return a Promise":{
+        "prefix":"jsPromise",
+        "body": [
+            "function ${1:name}(${2:params}) {",
+            "\treturn new Promise((resolve, reject) => {",
+            "\t\t$3",
+            "\t});",
+            "}"
+        ],
+        "description": "Create a promise"
+    },
+    "JavaScript - Fetch GET":{
+        "prefix":"jsFetchGET",
+        "body": [
+            "const fetchUrl = '$1';",
+            "fetch(fetchUrl)",
+                "\t.then(response => response.json())",
+                "\t.then(data => console.log(data))",
+                "\t.catch(error => console.log(error));",
+            ""
+        ],
+        "description": "Create fetch with GET method"
+    },
+    "JavaScript - Fetch with data change requests":{
+        "prefix":"jsFetchDataChange",
+        "body": [
+            "const fetchUrl = '$1';",
+            "fetch(fetchUrl, {",
+                "\tmethod: '$2',",
+                "\tbody: JSON.stringify(${3:data}),",
+                "\theaders: {",
+                    "\t\t'Content-Type': 'application/json'",
+                    "\t}",
+                    "})",
+                ".then(response => response.json())",
+                ".then(data => console.log(data))",
+                ".catch(error => console.log(error));",
+            ""
+        ],
+        "description": "Create fetch template for POST, PUT"
+    },
+    "JavaScript - Fetch with DELETE method":{
+        "prefix":"jsFetchDELETE",
+        "body": [
+            "const fetchUrl = '$1';",
+            "fetch(fetchUrl, {",
+                "\tmethod: '${2:DELETE}',",
+                "\theaders: {",
+                    "\t\t'Content-Type': 'application/json'",
+                    "\t}",
+                    "})",
+                ".then(response => response.json())",
+                ".then(data => console.log(data))",
+                ".catch(error => console.log(error));",
+            ""
+        ],
+        "description": "Create fetch with DELETE method"
+    },
     "Console - console.log()": {
 		"prefix": "cslog",
 		"body": [
@@ -244,32 +302,11 @@
 		],
 		"description": "Create console.log()"
     },
-    "React-pretence-router import Route": {
-        "prefix": "rprImportRouter",
-        "body": [
-            "import { Route, routerReducers as router } from 'react-pretence-router';"
-        ],
-        "description": "Import Route component and router reducers for react-pretence-router"
-    },
-    "React-pretence-router import Link": {
-        "prefix": "rprImportLink",
-        "body": [
-            "import { Link } from 'react-pretence-router';"
-        ],
-        "description": "Import Link component for react-pretence-router"
-    },
-    "React-pretence-router Route component": {
-        "prefix": "rprRouteComponent",
-        "body": [
-            "<Route path={'$1'} component={$2}/>"
-        ],
-        "description": "Create Route component that using react-pretence-router"
-    },
-    "React-pretence-router Link component": {
-        "prefix": "rprLinkComponent",
-        "body": [
-            "<Link to={'$1'} name={'$2'} css={'$3'}/>"
-        ],
-        "description": "Create Link component that using react-pretence-router"
+    "Console - console.error()": {
+		"prefix": "cserror",
+		"body": [
+            "console.error($1)"
+		],
+		"description": "Create console.error()"
     }
 }

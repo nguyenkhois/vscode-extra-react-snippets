@@ -1,2 +1,7 @@
 # Change Log
-This extension is in beta testing. It will become the release early.
+## 2019-01-09
+* Added JavaScript templates
+    * Fetch methods (GET, POST, PUT, DELETE)
+    * Promise
+* Added console.error()
+* Removed react-pretence-router support

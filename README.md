@@ -1,10 +1,10 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.22-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.24-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
 This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very powerful.
 
 ## Features
 
-You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.` or whatever you want.
+You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.` or whatever you remember.
 
 ![Demo](./images/demo.gif)
 
@@ -38,6 +38,15 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`rrReducer`|Create a basic reducer|
 |`rrconnect`|Create export connected component by connect() function|
 
+### JavaScript
+|Prefix|Description|
+|---|---|
+|`jsPromise`|Promise function|
+|`jsFetchGET`|Fetch template - GET method|
+|`jsFetchDataChange`|Fetch template (POST or PUT)|
+|`jsFetchDELETE`|Fetch template - DELETE method|
+
+
 ### Other
 |Prefix|Description|
 |---|---|
@@ -45,15 +54,6 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`handleClick`|Create handleClick() method with ES7 syntax|
 |`e.preventDefault`|Completion for e.preventDefault()|
 |`cslog`|console.log()|
-
-### Support to [react-pretence-router](https://www.npmjs.com/package/react-pretence-router)
-|Prefix (`rpr`)|Description|
-|---|---|
-|**Import**||
-|`rprImportRouter`|Import `{Route}` component and router reducers|
-|`rprImportLink`|Import `{Link}` component|
-|**Component**||
-|`rprRouteComponent`|Create `<Route/>` component|
-|`rprLinkComponent`|Create `<Link/>` component|
+|`cserror`|console.error()|
 
 **Enjoy coding and free your mind!** (^_^)
