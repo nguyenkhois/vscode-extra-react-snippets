@@ -272,11 +272,9 @@
     "JavaScript - Return a Promise function":{
         "prefix":"jsReturnPromise",
         "body": [
-            "function ${1:name}(${2:params}) {",
-            "\treturn new Promise((resolve, reject) => {",
-            "\t\t$3",
-            "\t});",
-            "}"
+            "return new Promise((resolve, reject) => {",
+            "\t$3",
+            "});"
         ],
         "description": "Return a Promise function"
     },
