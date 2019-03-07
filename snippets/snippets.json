@@ -41,7 +41,18 @@
             "\t)",
             "}"
         ],
-        "description": "Create only render()"
+        "description": "Create only render() method"
+    },
+    "React - Return a div": {
+        "prefix": "rrReturnDiv",
+        "body": [
+            "return (",
+            "\t<div>",
+            "\t\t$1",
+            "\t</div>",
+            ");"
+        ],
+        "description": "Return a div ta that is using for render()"
     },
     "React - Class component": {
         "prefix": "rrClassComponent",
@@ -58,7 +69,7 @@
             "\t}",
             "}"
         ],
-        "description": "Create class component"
+        "description": "Create a class component"
     },
     "React - Full class component": {
         "prefix": "rrClassComponentFull",
@@ -81,7 +92,7 @@
             "\t}",
             "}"
         ],
-        "description": "Create full class component"
+        "description": "Create a full class component"
     },
     "React - Constructor": {
         "prefix": "rrconstructor",
@@ -147,7 +158,7 @@
         ],
         "description": "Create componentDidCatch()"
     },
-    "React - mapDispatchToProps": {
+    "React-Redux - mapDispatchToProps": {
         "prefix": "rrmapDispatchToProps",
         "body": [
             "const mapDispatchToProps = {",
@@ -156,7 +167,7 @@
         ],
         "description": "Create mapDispatchToProps()"
     },
-    "React - mapStateToProps": {
+    "React-Redux - mapStateToProps": {
         "prefix": "rrmapStateToProps",
         "body": [
             "const mapStateToProps = (state) => {",
@@ -166,31 +177,22 @@
             "}"
         ],
         "description": "Create mapStateToProps()"
-    },
-    "React method with ES7 syntax": {
-        "prefix": "rrMethod",
-        "body": [
-            "${1:methodName} = (${2:params}) => {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create method with ES7 syntax"
-    },
-    "React-Redux - Create store": {
+    },    
+    "React-Redux - Create a store": {
 		"prefix": "rrcreateStore",
 		"body": [
             "const ${1:store} = createStore(${2:rootReducer},${3: [preloadedState]},${4: [enhancer]});"
 		],
-		"description": "React-Redux - Create store"
+		"description": "Create a Redux store"
     },
     "React-Redux - Combine reducer": {
 		"prefix": "rrCombineReducers",
 		"body": [
             "const ${1:rootReducer} = combineReducers({${2:reducer1}, ${3:reducer2\\}});"
 		],
-		"description": "React-Redux - Using combineReducers()"
+		"description": "Using combineReducers()"
     },
-    "React-Redux - Reducer": {
+    "React-Redux - Reducer template": {
 		"prefix": "rrReducer",
 		"body": [
             "export const ${1:reducerName} = (${2:state = {\\}}, ${3:action}) => {",
@@ -202,25 +204,44 @@
                 "\t}",
             "}"
 		],
-		"description": "React-Redux - Create a basic reducer"
+		"description": "Create a basic reducer template"
     },
-    "React-Redux - Export connected component": {
+    "React-Redux - Export a connected component": {
 		"prefix": "rrconnect",
 		"body": [
             "export const ${1:ComponentName} = connect(${2:mapStateToProps}, ${3:mapDispatchToProps})(${4:CreatedComponent});"
 		],
-		"description": "React-Redux - Export connected component"
+		"description": "Export a connected component"
+    },
+    "React method with ES7 syntax": {
+        "prefix": "rrMethod",
+        "body": [
+            "${1:methodName} = (${2:params}) => {",
+            "\t$3",
+            "}"
+        ],
+        "description": "Create method with ES7 syntax"
+    },
+    "React Hooks - Importing": {
+        "prefix": "rrImHooks",
+        "body": "import React, { useState, useEffect } from 'react';",
+        "description": "Import basic React Hooks"
+    },
+    "React Hooks - Declaration": {
+        "prefix": "rrDeclareHooks",
+        "body": "const [${1:stateVariable}, ${2:setState}] = useState(${initialState});",
+        "description": "Declare a state value by using React Hooks"
     },
     "Node.js module exports": {
         "prefix": "mep",
         "body": [
             "module.exports = {",
             "\t$1",
-            "}"
+            "};"
         ],
         "description": "Declare multiple module.exports"
     },    
-    "JavaScript method handleClick() with ES7 syntax": {
+    "JavaScript - Method handleClick() with ES7 syntax": {
         "prefix": "handleClick",
         "body": [
             "${1:handleClick} = (${2:e}) => {",
@@ -228,7 +249,7 @@
             "\t$4",
             "}"
         ],
-        "description": "Create handleClick() method with ES7 syntax"
+        "description": "Create a handleClick() method with ES7 syntax"
     },
     "JavaScript event.preventDefault": {
         "prefix": "e.preventDefault",
@@ -237,7 +258,7 @@
         ],
         "description": "Completion for e.preventDefault()"
     },
-    "JavaScript - Return a Promise":{
+    "JavaScript - A Promise function":{
         "prefix":"jsPromise",
         "body": [
             "function ${1:name}(${2:params}) {",
@@ -246,9 +267,20 @@
             "\t});",
             "}"
         ],
-        "description": "Create a promise"
+        "description": "Create a Promise function"
     },
-    "JavaScript - Fetch GET":{
+    "JavaScript - Return a Promise function":{
+        "prefix":"jsReturnPromise",
+        "body": [
+            "function ${1:name}(${2:params}) {",
+            "\treturn new Promise((resolve, reject) => {",
+            "\t\t$3",
+            "\t});",
+            "}"
+        ],
+        "description": "Return a Promise function"
+    },
+    "JavaScript - Fetch by using GET":{
         "prefix":"jsFetchGET",
         "body": [
             "const fetchUrl = '$1';",
@@ -258,10 +290,10 @@
                 "\t.catch(error => console.log(error));",
             ""
         ],
-        "description": "Create fetch with GET method"
+        "description": "Create fetch by using GET method"
     },
-    "JavaScript - Fetch with data change requests":{
-        "prefix":"jsFetchDataChange",
+    "JavaScript - Fetch by using POST or PUT method":{
+        "prefix":"jsFetchPOSTorPUT",
         "body": [
             "const fetchUrl = '$1';",
             "fetch(fetchUrl, {",
@@ -276,9 +308,9 @@
                 ".catch(error => console.log(error));",
             ""
         ],
-        "description": "Create fetch template for POST, PUT"
+        "description": "Create a fetch template for POST or PUT method"
     },
-    "JavaScript - Fetch with DELETE method":{
+    "JavaScript - Fetch by using DELETE method":{
         "prefix":"jsFetchDELETE",
         "body": [
             "const fetchUrl = '$1';",
@@ -293,20 +325,20 @@
                 ".catch(error => console.log(error));",
             ""
         ],
-        "description": "Create fetch with DELETE method"
+        "description": "Create fetch by using DELETE method"
     },
     "Console - console.log()": {
 		"prefix": "cslog",
 		"body": [
-            "console.log($1)"
+            "console.log($1);"
 		],
-		"description": "Create console.log()"
+		"description": "Print to console"
     },
     "Console - console.error()": {
 		"prefix": "cserror",
 		"body": [
-            "console.error($1)"
+            "console.error($1);"
 		],
-		"description": "Create console.error()"
+		"description": "Print error to console"
     }
 }

@@ -1,10 +1,10 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/badge/Marketplace-v0.0.24-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/KhoiLe.extra-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
-This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very powerful.
+This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very smart and powerful.
 
 ## Features
 
-You start to type **`rr`** then you show all React code snippets in code completion and continue with something other like `im, ren, cla, con, map, etc.` or whatever you remember.
+You start to type **`rr`** then you show all React code snippets in code completion and continue with whatever you remember as `im, ren, cla, con, map, etc.`.
 
 ![Demo](./images/demo.gif)
 
@@ -38,12 +38,19 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`rrReducer`|Create a basic reducer|
 |`rrconnect`|Create export connected component by connect() function|
 
+### React Hooks
+|Prefix|Description|
+|---|---|
+|`rrImHooks`|Import basic React Hooks|
+|`rrDeclareHooks`|Declare a state value by using React Hooks|
+
 ### JavaScript
 |Prefix|Description|
 |---|---|
-|`jsPromise`|Promise function|
+|`jsPromise`|Generates a full Promise function|
+|`jsReturnPromise`|Generates a return for a Promise function|
 |`jsFetchGET`|Fetch template - GET method|
-|`jsFetchDataChange`|Fetch template (POST or PUT)|
+|`jsFetchPOSTorPUT`|Fetch template (POST or PUT)|
 |`jsFetchDELETE`|Fetch template - DELETE method|
 
 
