@@ -1,4 +1,6 @@
-# Extra React code snippets [![Download on Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/KhoiLe.extra-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
+# Extra React code snippets
+
+[![Download on Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/KhoiLe.extra-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
 This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very smart and powerful.
 
