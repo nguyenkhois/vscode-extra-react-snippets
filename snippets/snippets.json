@@ -26,7 +26,7 @@
             "ReactDOM.render(",
             "\t<${1:ComponentName}/>,",
             "\tdocument.getElementById('${2:root}')",
-            ")"
+            ");"
         ],
         "description": "Create ReactDOM.render()"
     },
@@ -38,7 +38,7 @@
             "\t\t<div>",
             "\t\t\t$1",
             "\t\t</div>",
-            "\t)",
+            "\t);",
             "}"
         ],
         "description": "Create only render() method"
@@ -60,12 +60,12 @@
             "class ${1:ClassName} extends Component {",
             "\t$2",
             "\t",
-            "\trender(){",
-            "\t\treturn(",
+            "\trender() {",
+            "\t\treturn (",
             "\t\t\t<div>",
             "\t\t\t\t$3",
             "\t\t\t</div>",
-            "\t\t)",
+            "\t\t);",
             "\t}",
             "}"
         ],
@@ -83,12 +83,12 @@
             "\t//Do stuff",
             "\t$3",
             "\t",
-            "\trender(){",
-            "\t\treturn(",
+            "\trender() {",
+            "\t\treturn (",
             "\t\t\t<div>",
             "\t\t\t\t$4",
             "\t\t\t</div>",
-            "\t\t)",
+            "\t\t);",
             "\t}",
             "}"
         ],
@@ -163,7 +163,7 @@
         "body": [
             "const mapDispatchToProps = {",
             "\t$1",
-            "}"
+            "};"
         ],
         "description": "Create mapDispatchToProps()"
     },
@@ -173,8 +173,8 @@
             "const mapStateToProps = (state) => {",
             "\treturn ({",
             "\t\t$1",
-            "\t})",
-            "}"
+            "\t});",
+            "};"
         ],
         "description": "Create mapStateToProps()"
     },    
@@ -283,9 +283,9 @@
         "body": [
             "const fetchUrl = '$1';",
             "fetch(fetchUrl)",
-                "\t.then(response => response.json())",
-                "\t.then(data => console.log(data))",
-                "\t.catch(error => console.log(error));",
+                "\t.then((response) => response.json())",
+                "\t.then((data) => console.log(data))",
+                "\t.catch((error) => console.log(error));",
             ""
         ],
         "description": "Create fetch by using GET method"
@@ -301,9 +301,9 @@
                     "\t\t'Content-Type': 'application/json'",
                     "\t}",
                     "})",
-                ".then(response => response.json())",
-                ".then(data => console.log(data))",
-                ".catch(error => console.log(error));",
+                ".then((response) => response.json())",
+                ".then((data) => console.log(data))",
+                ".catch((error) => console.log(error));",
             ""
         ],
         "description": "Create a fetch template for POST or PUT method"
@@ -318,9 +318,9 @@
                     "\t\t'Content-Type': 'application/json'",
                     "\t}",
                     "})",
-                ".then(response => response.json())",
-                ".then(data => console.log(data))",
-                ".catch(error => console.log(error));",
+                ".then((response) => response.json())",
+                ".then((data) => console.log(data))",
+                ".catch((error) => console.log(error));",
             ""
         ],
         "description": "Create fetch by using DELETE method"
@@ -328,14 +328,14 @@
     "Console - console.log()": {
 		"prefix": "cslog",
 		"body": [
-            "console.log($1);"
+            "console.log($1)$2"
 		],
 		"description": "Print to console"
     },
     "Console - console.error()": {
 		"prefix": "cserror",
 		"body": [
-            "console.error($1);"
+            "console.error($1)$2"
 		],
 		"description": "Print error to console"
     }
