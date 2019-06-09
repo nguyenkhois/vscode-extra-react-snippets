@@ -1,5 +1,8 @@
+.vs/**
 .vscode/**
 .vscode-test/**
+.idea/**
+.DS_Store
 .gitignore
 vsc-extension-quickstart.md
 template.md
