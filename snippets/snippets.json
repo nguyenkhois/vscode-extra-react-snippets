@@ -94,6 +94,17 @@
         ],
         "description": "Create a full class component"
     },
+    "React - Stateless function component": {
+        "prefix": "rrStatelessFunctionComponent",
+        "body": [
+          "const ${1:FunctionName} = ($2) => {",
+          "\treturn ( $0 );",
+          "}",
+          " ",
+          "export default ${1:FunctionName};"
+        ],
+        "description": "Create a stateless function component"
+      },
     "React - Constructor": {
         "prefix": "rrconstructor",
         "body": [
@@ -177,7 +188,7 @@
             "};"
         ],
         "description": "Create mapStateToProps()"
-    },    
+    },
     "React-Redux - Create a store": {
 		"prefix": "rrcreateStore",
 		"body": [
@@ -240,7 +251,7 @@
             "};"
         ],
         "description": "Declare multiple module.exports"
-    },    
+    },
     "JavaScript - Method handleClick() with ES7 syntax": {
         "prefix": "handleClick",
         "body": [

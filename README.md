@@ -23,6 +23,7 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |**Class**||
 |`rrClassComponent`|Create class component|
 |`rrClassComponentFull`|Create full class component|
+|`rrStatelessFunctionalComponent`|Create stateless functional component|
 |**Component**||
 |`rrconstructor`|Create constructor()|
 |`rrcomponentDidMount`|Create componentDidMount()|
