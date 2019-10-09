@@ -267,7 +267,14 @@
         "body": [
             "e.preventDefault();"
         ],
-        "description": "Completion for e.preventDefault()"
+        "description": "Completion for event.preventDefault()"
+    },
+    "JavaScript event.stopPropagation": {
+        "prefix": "e.stopPropagation",
+        "body": [
+            "e.stopPropagation();"
+        ],
+        "description": "Completion for event.stopPropagation()"
     },
     "JavaScript - A Promise function":{
         "prefix":"jsPromise",

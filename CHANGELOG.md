@@ -1,4 +1,7 @@
-# Change Log
+# Changelog
+
+## 0.0.29 (2019-10-09)
+* Added the snippet event.stopPropagation()
 
 ## 0.0.28 (2019-04-27)
 * Added template for React Stateless Functional Component

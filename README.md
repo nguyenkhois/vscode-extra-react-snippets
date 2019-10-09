@@ -63,6 +63,7 @@ You start to type **`rr`** then you show all React code snippets in code complet
 |`mep`|Declare multiple module.exports|
 |`handleClick`|Create handleClick() method with ES7 syntax|
 |`e.preventDefault`|Completion for e.preventDefault()|
+|`e.stopPropagation`|Completion for e.stopPropagation()|
 |`cslog`|console.log()|
 |`cserror`|console.error()|
 
