@@ -6,7 +6,7 @@ This extension is lightweight and you don't need remember all prefixs because Vi
 
 ## Features
 
-You start to type **`rr`** then you show all React code snippets in code completion and continue with whatever you remember as `imp, return, event, etc.`
+You start to type **`rr`** or `imp, return, event, etc.` or whatever you remember then you can see many snippets in code completion.
 
 ### React
 |Prefix (`rr`)|Description|
