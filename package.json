@@ -2,7 +2,7 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Extra React code snippets",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "publisher": "KhoiLe",
     "engines": {
         "vscode": "^1.74.0"
@@ -23,6 +23,18 @@
                 "id": "javascriptreact",
                 "extensions": [
                     ".jsx"
+                ]
+            },
+            {
+                "id": "typescript",
+                "extensions": [
+                    ".ts"
+                ]
+            },
+            {
+                "id": "typescriptreact",
+                "extensions": [
+                    ".tsx"
                 ]
             }
         ],
