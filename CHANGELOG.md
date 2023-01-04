@@ -1,4 +1,10 @@
 # Changelog
+## 1.0.0 (2023-01-04)
+__BREAKING CHANGES!__
+* Many snippets that are using for Redux and React class component are removed. You should make your own snippets in your VSCode.
+* A few prefixies are changed or added for a better usage.
+
+View README for more details.
 
 ## 0.0.29 (2019-10-09)
 * Added the snippet event.stopPropagation()

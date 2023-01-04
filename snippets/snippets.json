@@ -1,99 +1,36 @@
 {
-    "React - Import render": {
-        "prefix": "rrImRender",
-        "body": [
-            "import { render } from 'react-dom';"
-        ],
-        "description": "Import render() from ReactDOM"
+    "React Hooks import": {
+        "prefix": "rrImpHooks",
+        "body": "import React, { useState, useEffect } from 'react';",
+        "description": "Import basic React Hooks"
     },
-    "React - Import ReactDOM": {
-        "prefix": "rrImReactDOM",
+    "React function": {
+        "prefix": "rrFunction",
         "body": [
-            "import ReactDOM from 'react-dom';"
-        ],
-        "description": "Import ReactDOM from ReactDOM"
-    },
-    "React - Import ReactDOM and render()": {
-        "prefix": "rrImReactDOMRender",
-        "body": [
-            "import ReactDOM, { render } from 'react-dom';"
-        ],
-        "description": "Import ReactDOM, render() from ReactDOM"
-    },
-    "ReactDOM - Render method": {
-        "prefix": "rrRenderDom",
-        "body": [
-            "ReactDOM.render(",
-            "\t<${1:ComponentName}/>,",
-            "\tdocument.getElementById('${2:root}')",
-            ");"
-        ],
-        "description": "Create ReactDOM.render()"
-    },
-    "React - Render method": {
-        "prefix": "rrRender",
-        "body": [
-            "render() {",
-            "\treturn (",
-            "\t\t<div>",
-            "\t\t\t$1",
-            "\t\t</div>",
-            "\t);",
-            "}"
-        ],
-        "description": "Create only render() method"
-    },
-    "React - Return a div": {
-        "prefix": "rrReturnDiv",
-        "body": [
-            "return (",
-            "\t<div>",
-            "\t\t$1",
-            "\t</div>",
-            ");"
-        ],
-        "description": "Return a div ta that is using for render()"
-    },
-    "React - Class component": {
-        "prefix": "rrClassComponent",
-        "body": [
-            "class ${1:ClassName} extends Component {",
-            "\t$2",
-            "\t",
-            "\trender() {",
-            "\t\treturn (",
-            "\t\t\t<div>",
-            "\t\t\t\t$3",
-            "\t\t\t</div>",
-            "\t\t);",
-            "\t}",
-            "}"
-        ],
-        "description": "Create a class component"
-    },
-    "React - Full class component": {
-        "prefix": "rrClassComponentFull",
-        "body": [
-            "class ${1:ClassName} extends Component {",
-            "\tconstructor(props) {",
-            "\t\tsuper(props);",
-            "\t\tthis.state = { $2 };",
-            "\t}",
-            "\t",
-            "\t//Do stuff",
+            "const ${1:FunctionName} = (${2:parameters}) => {",
             "\t$3",
-            "\t",
-            "\trender() {",
-            "\t\treturn (",
-            "\t\t\t<div>",
-            "\t\t\t\t$4",
-            "\t\t\t</div>",
-            "\t\t);",
-            "\t}",
-            "}"
+            "};"
         ],
-        "description": "Create a full class component"
+        "description": "Create a function with ES7 syntax"
     },
+    "React component": {
+		"prefix": "rrComponent",
+		"body": [
+			"import React, { useState, useEffect } from 'react';",
+			"",
+			"const ${1:ComponentName} = () => {",
+			"",
+			"\treturn (",
+			"\t\t<div>",
+			"\t\t\t${1:ComponentName}",
+			"\t\t</div>",
+			"\t);",
+			"};",
+			"",
+			"export default ${1:ComponentName};"
+		],
+		"description": "Create a simple component with React Hooks"
+	},
     "React - Stateless function component": {
         "prefix": "rrStatelessFunctionComponent",
         "body": [
@@ -104,177 +41,66 @@
           "export default ${1:FunctionName};"
         ],
         "description": "Create a stateless function component"
-      },
-    "React - Constructor": {
-        "prefix": "rrconstructor",
+    },
+    "React - Return an HTML element": {
+        "prefix": "rrReturnElement",
         "body": [
-            "constructor(props) {",
-            "\tsuper(props);",
-            "\tthis.state = { $1 };",
-            "}$2"
+            "return (",
+            "\t<${1:TagName}>",
+            "\t\t$2",
+            "\t</${1:TagName}>",
+            ");"
         ],
-        "description": "Create constructor()"
+        "description": "Return an HTML element"
     },
-    "React - componentDidMount()": {
-        "prefix": "rrcomponentDidMount",
-        "body": [
-            "componentDidMount() {",
-            "\t$1",
-            "}"
-        ],
-        "description": "Create componentDidMount()"
+    "Import from module": {
+        "prefix": "imp",
+        "body": "import { $1 } from '$2';",
+        "description": "Import live bindings from another module"
     },
-    "React - componentDidUpdate()": {
-        "prefix": "rrcomponentDidUpdate",
-        "body": [
-            "componentDidUpdate(${1:prevProps},${2: prevState},${3: snapshot}) {",
-            "\t$4",
-            "}"
-        ],
-        "description": "Create componentDidUpdate()"
+    "Import default": {
+        "prefix": "imd",
+        "body": "import $1 from '$2';",
+        "description": "Import default from another module"
     },
-    "React - componentWillUnmount()": {
-        "prefix": "rrcomponentWillUnmount",
-        "body": [
-            "componentWillUnmount() {",
-            "\t$1",
-            "}"
-        ],
-        "description": "Create componentWillUnmount()"
-    },
-    "React - shouldComponentUpdate()": {
-        "prefix": "rrshouldComponentUpdate",
-        "body": [
-            "shouldComponentUpdate(${1:nextProps},${2: nextState}) {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create shouldComponentUpdate()"
-    },
-    "React - getSnapshotBeforeUpdate()": {
-        "prefix": "rrgetSnapshotBeforeUpdate",
-        "body": [
-            "getSnapshotBeforeUpdate(${1:prevProps},${2: prevState}) {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create getSnapshotBeforeUpdate()"
-    },
-    "React - componentDidCatch()": {
-        "prefix": "rrcomponentDidCatch",
-        "body": [
-            "componentDidCatch(${1:error},${2: info}) {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create componentDidCatch()"
-    },
-    "React-Redux - mapDispatchToProps": {
-        "prefix": "rrmapDispatchToProps",
-        "body": [
-            "const mapDispatchToProps = {",
-            "\t$1",
-            "};"
-        ],
-        "description": "Create mapDispatchToProps()"
-    },
-    "React-Redux - mapStateToProps": {
-        "prefix": "rrmapStateToProps",
-        "body": [
-            "const mapStateToProps = (state) => {",
-            "\treturn ({",
-            "\t\t$1",
-            "\t});",
-            "};"
-        ],
-        "description": "Create mapStateToProps()"
-    },
-    "React-Redux - Create a store": {
-		"prefix": "rrcreateStore",
-		"body": [
-            "const ${1:store} = createStore(${2:rootReducer},${3: [preloadedState]},${4: [enhancer]});"
-		],
-		"description": "Create a Redux store"
-    },
-    "React-Redux - Combine reducer": {
-		"prefix": "rrCombineReducers",
-		"body": [
-            "const ${1:rootReducer} = combineReducers({${2:reducer1}, ${3:reducer2\\}});"
-		],
-		"description": "Using combineReducers()"
-    },
-    "React-Redux - Reducer template": {
-		"prefix": "rrReducer",
-		"body": [
-            "export const ${1:reducerName} = (${2:state = {\\}}, ${3:action}) => {",
-                "\tswitch (${4:action.type}) {",
-                    "\t\tcase '${5:ACTION_TYPE}':",
-                    "\t\t\treturn ${6:newState}",
-                    "\t\tdefault:",
-                    "\t\t\treturn state",
-                "\t}",
-            "}"
-		],
-		"description": "Create a basic reducer template"
-    },
-    "React-Redux - Export a connected component": {
-		"prefix": "rrconnect",
-		"body": [
-            "export const ${1:ComponentName} = connect(${2:mapStateToProps}, ${3:mapDispatchToProps})(${4:CreatedComponent});"
-		],
-		"description": "Export a connected component"
-    },
-    "React method with ES7 syntax": {
-        "prefix": "rrMethod",
-        "body": [
-            "${1:methodName} = (${2:params}) => {",
-            "\t$3",
-            "}"
-        ],
-        "description": "Create method with ES7 syntax"
-    },
-    "React Hooks - Importing": {
-        "prefix": "rrImHooks",
-        "body": "import React, { useState, useEffect } from 'react';",
-        "description": "Import basic React Hooks"
-    },
-    "React Hooks - Declaration": {
-        "prefix": "rrDeclareHooks",
-        "body": "const [${1:stateVariable}, ${2:setState}] = useState(${initialState});",
-        "description": "Declare a state value by using React Hooks"
-    },
-    "Node.js module exports": {
+    "Export default": {
+		"prefix": "exd",
+		"body": ["export default {", "\t$1", "}"],
+		"description": "Declare export default for bindings"
+	},
+    "Node.js - Module exports": {
+        "scope": "javascript",
         "prefix": "mep",
         "body": [
             "module.exports = {",
             "\t$1",
             "};"
         ],
-        "description": "Declare multiple module.exports"
-    },
-    "JavaScript - Method handleClick() with ES7 syntax": {
-        "prefix": "handleClick",
-        "body": [
-            "${1:handleClick} = (${2:e}) => {",
-            "\t${3:e.preventDefault();}",
-            "\t$4",
-            "}"
-        ],
-        "description": "Create a handleClick() method with ES7 syntax"
+        "description": "Declare module.exports statement"
     },
     "JavaScript event.preventDefault": {
-        "prefix": "e.preventDefault",
+        "prefix": "eventpr",
         "body": [
-            "e.preventDefault();"
+            "event.preventDefault();"
         ],
         "description": "Completion for event.preventDefault()"
     },
     "JavaScript event.stopPropagation": {
-        "prefix": "e.stopPropagation",
+        "prefix": "eventst",
         "body": [
-            "e.stopPropagation();"
+            "event.stopPropagation();"
         ],
         "description": "Completion for event.stopPropagation()"
+    },
+    "JavaScript - Action function": {
+        "prefix": "handleAction",
+        "body": [
+            "const ${1:handleAction} = (${2:event}) => {",
+            "\t${3:event.preventDefault();}",
+            "\t$4",
+            "};"
+        ],
+        "description": "Create a function to handle an action"
     },
     "JavaScript - A Promise function":{
         "prefix":"jsPromise",
@@ -306,10 +132,10 @@
                 "\t.catch((error) => console.log(error));",
             ""
         ],
-        "description": "Create fetch by using GET method"
+        "description": "Create a simple fetch by using GET method"
     },
-    "JavaScript - Fetch by using POST or PUT method":{
-        "prefix":"jsFetchPOSTorPUT",
+    "JavaScript - Fetch by using options":{
+        "prefix":"jsFetch",
         "body": [
             "const fetchUrl = '$1';",
             "fetch(fetchUrl, {",
@@ -324,37 +150,30 @@
                 ".catch((error) => console.log(error));",
             ""
         ],
-        "description": "Create a fetch template for POST or PUT method"
+        "description": "Create a fetch template with options"
     },
-    "JavaScript - Fetch by using DELETE method":{
-        "prefix":"jsFetchDELETE",
-        "body": [
-            "const fetchUrl = '$1';",
-            "fetch(fetchUrl, {",
-                "\tmethod: '${2:DELETE}',",
-                "\theaders: {",
-                    "\t\t'Content-Type': 'application/json'",
-                    "\t}",
-                    "})",
-                ".then((response) => response.json())",
-                ".then((data) => console.log(data))",
-                ".catch((error) => console.log(error));",
-            ""
-        ],
-        "description": "Create fetch by using DELETE method"
-    },
-    "Console - console.log()": {
-		"prefix": "cslog",
+    "Console - Print to console": {
+		"prefix": "csl",
+		"body": "console.log($1);",
+		"description": "Log output to console"
+	},
+    "Console - Display data as a table": {
+		"prefix": "cst",
+		"body": "console.table($1);",
+		"description": "Log data as a table to console"
+	},
+    "Console - Print warning": {
+		"prefix": "csw",
 		"body": [
-            "console.log($1)$2"
+            "console.warn($1);"
 		],
-		"description": "Print to console"
+		"description": "Log warning to console"
     },
-    "Console - console.error()": {
-		"prefix": "cserror",
+    "Console - Print error": {
+		"prefix": "cse",
 		"body": [
-            "console.error($1)$2"
+            "console.error($1);"
 		],
-		"description": "Print error to console"
+		"description": "Log error to console"
     }
 }

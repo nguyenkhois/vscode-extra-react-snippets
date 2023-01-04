@@ -2,10 +2,10 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Extra React code snippets",
-    "version": "0.0.30",
+    "version": "1.0.0",
     "publisher": "KhoiLe",
     "engines": {
-        "vscode": "^1.26.0"
+        "vscode": "^1.74.0"
     },
     "categories": [
         "Snippets"
@@ -24,6 +24,18 @@
                 "extensions": [
                     ".jsx"
                 ]
+            },
+            {
+                "id": "typescript",
+                "extensions": [
+                    ".ts"
+                ]
+            },
+            {
+                "id": "typescriptreact",
+                "extensions": [
+                    ".tsx"
+                ]
             }
         ],
         "snippets": [
@@ -34,15 +46,21 @@
             {
                 "language": "javascriptreact",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.json"
             }
         ]
     },
     "keywords": [
-        "javascript",
+        "snippet",
+        "snippets",
         "react",
-        "react-hooks",
-        "redux",
-        "react-redux",
         "react snippets"
     ],
     "homepage": "https://github.com/nguyenkhois",
