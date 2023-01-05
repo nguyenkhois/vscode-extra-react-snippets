@@ -59,12 +59,12 @@
         "description": "Import live bindings from another module"
     },
     "Import default": {
-        "prefix": "imd",
+        "prefix": "impd",
         "body": "import $1 from '$2';",
         "description": "Import default from another module"
     },
     "Export default": {
-		"prefix": "exd",
+		"prefix": "expd",
 		"body": ["export default {", "\t$1", "}"],
 		"description": "Declare export default for bindings"
 	},

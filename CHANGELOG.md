@@ -1,4 +1,10 @@
 # Changelog
+## 1.0.1 (2023-01-05)
+* Fix bugs for snippets:
+    - `impd` - "import defaultExport from 'module-name'" statement.
+    - `expd` - "export default { export }" statement.
+* Improve document.
+
 ## 1.0.0 (2023-01-04)
 __BREAKING CHANGES!__
 * Many snippets that are using for Redux and React class component are removed. You should make your own snippets in your VSCode.
