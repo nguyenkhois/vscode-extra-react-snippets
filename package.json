@@ -1,8 +1,8 @@
 {
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
-    "description": "Extra React code snippets",
-    "version": "1.0.0",
+    "description": "Code snippets for Javascript and React",
+    "version": "1.0.1",
     "publisher": "KhoiLe",
     "engines": {
         "vscode": "^1.74.0"
@@ -60,8 +60,9 @@
     "keywords": [
         "snippet",
         "snippets",
-        "react",
-        "react snippets"
+        "javascript snippets",
+        "react snippets",
+        "extra react snippets"
     ],
     "homepage": "https://github.com/nguyenkhois",
     "repository": {

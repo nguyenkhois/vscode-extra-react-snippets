@@ -2,11 +2,11 @@
 
 [![Download on Visual Studio Marketplace](https://img.shields.io/visual-studio-marketplace/v/KhoiLe.extra-react-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=KhoiLe.extra-react-snippets)
 
-This extension is lightweight and you don't need remember all prefixs because Visual Studio Code IntelliSense is very smart and powerful.
+This extension is lightweight and you don't need remember all prefixes because Visual Studio Code IntelliSense is very smart and powerful.
 
 ## Features
 
-You start to type **`rr`** or `imp, return, event, etc.` or whatever you remember then you can see many snippets in code completion.
+You start type **`rr`** to use code template blocks or `imp, csl, handle, event, etc.` for using short statements. Type whatever you remember then you can see many snippets in code completion.
 
 ### React
 |Prefix (`rr`)|Description|
