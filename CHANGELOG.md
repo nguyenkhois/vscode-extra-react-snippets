@@ -1,4 +1,7 @@
 # Changelog
+## 1.0.2 (2023-02-18)
+* Change cursor order when using import module syntax.
+
 ## 1.0.1 (2023-01-05)
 * Fix bugs for snippets:
     - `impd` - "import defaultExport from 'module-name'" statement.
