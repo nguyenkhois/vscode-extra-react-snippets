@@ -4,6 +4,27 @@
 
 This extension is lightweight and you don't need remember all prefixes because Visual Studio Code IntelliSense is very smart and powerful.
 
+## Custom comment style
+
+You can choose the comment markers used by VS Code's **Toggle Line Comment** and **Toggle Block Comment** commands in JavaScript, JSX, TypeScript, and TSX files.
+
+To configure them in the Settings UI, open **Settings**, search for `Extra React Snippets`, and use the **Comments** Item/Value table. VS Code provides **Add Item**, shows **Edit** and **Delete** actions when you hover over a row, and includes an **Edit in settings.json** link.
+
+For `blockComment`, enter the opening and closing markers separated by a comma, for example `/*!, */`.
+
+The same options can be added directly to `settings.json`:
+
+```jsonc
+{
+	"extraReactSnippets.comments": {
+		"lineComment": "//!",
+		"blockComment": "/*!, */"
+	}
+}
+```
+
+Leave the object empty or remove the setting to use the standard comment style supplied by VS Code. Line and block comment styles can be configured independently.
+
 ## Features
 
 You start type **`rr`** to use code template blocks or `imp, csl, handle, event, etc.` for using short statements. Type whatever you remember then you can see many snippets in code completion.

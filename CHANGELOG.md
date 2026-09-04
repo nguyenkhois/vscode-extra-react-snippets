@@ -1,4 +1,7 @@
 # Changelog
+## 1.1.0 (2026-09-04)
+* Added support for custom comment styles in JavaScript, JSX, TypeScript, and TSX files.
+
 ## 1.0.2 (2023-02-18)
 * Change cursor order when using import module syntax.
 

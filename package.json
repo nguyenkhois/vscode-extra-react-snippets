@@ -2,40 +2,49 @@
     "name": "extra-react-snippets",
     "displayName": "Extra React snippets",
     "description": "Code snippets for Javascript and React",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "publisher": "KhoiLe",
+	"homepage": "https://github.com/nguyenkhois",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nguyenkhois/vscode-extra-react-snippets.git"
+    },
     "engines": {
         "vscode": "^1.74.0"
     },
     "categories": [
         "Snippets"
     ],
+    "keywords": [
+        "javascript snippets",
+        "react snippets",
+        "extra react snippets"
+    ],
     "icon": "images/main-icon.png",
+	"main": "./src/extension.js",
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact"
+	],
     "contributes": {
         "languages": [
             {
                 "id": "javascript",
-                "extensions": [
-                    ".js"
-                ]
+                "extensions": [ ".js" ]
             },
             {
                 "id": "javascriptreact",
-                "extensions": [
-                    ".jsx"
-                ]
+                "extensions": [ ".jsx" ]
             },
             {
                 "id": "typescript",
-                "extensions": [
-                    ".ts"
-                ]
+                "extensions": [ ".ts" ]
             },
             {
                 "id": "typescriptreact",
-                "extensions": [
-                    ".tsx"
-                ]
+                "extensions": [ ".tsx" ]
             }
         ],
         "snippets": [
@@ -55,18 +64,31 @@
                 "language": "typescriptreact",
                 "path": "./snippets/snippets.json"
             }
-        ]
-    },
-    "keywords": [
-        "snippet",
-        "snippets",
-        "javascript snippets",
-        "react snippets",
-        "extra react snippets"
-    ],
-    "homepage": "https://github.com/nguyenkhois",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nguyenkhois/vscode-extra-react-snippets.git"
+        ],
+		"configuration": {
+			"title": "Extra React Snippets",
+			"properties": {
+				"extraReactSnippets.comments": {
+					"type": "object",
+					"default": {},
+					"additionalProperties": false,
+					"properties": {
+						"lineComment": {
+							"type": "string",
+							"minLength": 1,
+							"description": "Custom line comment marker."
+						},
+						"blockComment": {
+							"type": "string",
+							"minLength": 3,
+							"pattern": "^\\s*[^,\\r\\n]+\\s*,\\s*[^,\\r\\n]+\\s*$",
+							"patternErrorMessage": "Enter the opening and closing markers separated by a comma, for example /*!, */.",
+							"description": "Custom block comment markers separated by a comma, for example /*!, */."
+						}
+					},
+					"markdownDescription": "Custom comment markers for JavaScript and TypeScript files. Add, edit, or delete values in the table below. Leave the object empty or remove the setting to use the VS Code language defaults. [Edit in settings.json](command:workbench.action.openSettingsJson)."
+				}
+			}
+		}
     }
 }
